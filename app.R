@@ -64,7 +64,7 @@ header <- dashboardHeader(
 sidebar <- bs4DashSidebar(
   
   #set the width of the sidebar
-  use_theme(create_theme(bs4dash_layout(sidebar_width = "162px"))),
+  use_theme(create_theme(bs4dash_layout(sidebar_width = "172px"))),
   
   #Initialize the package used for the tutorial
   introjsUI(),
@@ -354,15 +354,15 @@ body <- bs4DashBody(
                      
                      
                      
-                     actionButton(
-                       "dataAboutButton",
-                       "Acerca de Estos Datos",
-                       icon("info-circle"),
-                       style =
-                         "color: #fff; background-color: #337ab7;
-                                                                         border-color: #2e6da4;
-                                                                         margin-left: 8px;"
-                     ),
+                     # actionButton(
+                     #   "dataAboutButton",
+                     #   "Acerca de Estos Datos",
+                     #   icon("info-circle"),
+                     #   style =
+                     #     "color: #fff; background-color: #337ab7;
+                     #                                                     border-color: #2e6da4;
+                     #                                                     margin-left: 8px;"
+                     # ),
                      
                      
                      # introBox(
@@ -682,7 +682,7 @@ output$myBackground <- renderUI({
     id = "introModal",
     title = "¡Bienvenido!",
     HTML("<div class='polaroid'; style = 'text-align: center;'>",
-      '<iframe width="100%" height="315" src="https://www.youtube.com/embed/YbFk_MwKSpY" title="Community-Led Air Monitoring for Hexavalent Chromium in Paramount, CA " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+      '<iframe width="100%" height="315" src="https://www.youtube.com/embed/3RlTxV3hhPM" title="Community-Led Air Monitoring for Hexavalent Chromium in Paramount, CA " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
       "</div>",
       "<br>",
       "<p>En esta aplicación, puede ver los datos del monitor de aire recopilados en Paramount, CA.</p><b>¡Haga clic en el botón Iniciar Tutorial a continuación para obtener un breve recorrido sobre cómo usar la aplicación.</b>",
