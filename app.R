@@ -52,7 +52,15 @@ header <- dashboardHeader(
   #load the CEH logo
   title = HTML("<div style = 'height: 35px; text-align: center;'>",
                '<img class="header-picture" src="ceh.logo.rgb.FNL_2.png" width = "105px">',
-                 "</div>"),
+               "</div>"),
+  
+  span(
+    actionButton("languageButton", "English",
+                 status = "secondary",
+                 icon("globe"),
+                 onclick ="window.open('https://ceh-data.shinyapps.io/ParamountCommunityAirMonitoring/', '_blank')"),
+    style = "position:absolute;right:5em;"
+  ),
   
   #load the creator credit button on the top right of the user interface
   rightUi = userOutput("user")
